@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+    <link rel="shortcut icon" href="imagenes/logosole.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+           
+            <a class="logo" href="index.html"><img class="logo"src="imagenes/logosole.png"></a>
+            <a href="index.html">Sobre mi</a>
+            <a href="experiencia.html">Experiencia</a>
+            <a href="#">Contacto</a>
+           
+           
+        </nav>
+    </header>
+    <main>
+        <div>
+            <form action="validar.html">
+                <fieldset>
+                   <legend>Contactame</legend>
+                   <div>
+                       <label for="nombre">Nombre Completo</label>
+                   <input name="nombre" id="nombre" type="text" placeholder="su nombre"  minlength="3" maxlength="50" required>
+                    </div>
+                    <div>
+                        <label for="mail">Mail</label>
+                        <input id="mail" name="mail" type="email" placeholder="ejemplo@mail.com" required>
+                    </div>
+                    <div>
+                        <label for="fnac">Fecha de Nacimiento</label>
+                        <input id="fnac" name="fecha_nac" type="date" required>
+                    </div>
+                    <div>
+                        <label for="prov">Indique Provincia</label>
+                        <select name="provincia" id="prov">
+                            <option value="Caba">Capital Federal</option>
+                            <option value="Buenos Aires" selected>Bs. As.</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Cordoba">Cordoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Rios">Entre Rios</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquen">Neuquen</option>
+                            <option value="Rio Negro">Rio Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Sgo. del Estero">Sgo. del Estero</option>
+                            <option value="Tierra del Fuego">Tierra del Fuego</option>
+                            <option value="Tucuman">Tucuman</option>
+                        </select>
+                        </div>
+                        <div>
+                            <fieldset>
+                        <legend>Indique Sexo</legend>
+                        <label for="masculino1">Masculino
+                            <input id="masculino" name="un_leng" type="radio" value="masculino" checked required>
+                        </label>
+                        <label for="femenino1">Femenino
+                            <input id="femenino1" name="un_leng" type="radio" value="femenino"  required>
+                        </label>
+                        <label for="no__especifica1">No especifica
+                            <input id="no__especifica1" name="un_leng" type="radio" value="no__especifica"  required>
+                        </label>
+                    </fieldset>
+                        </div>
+
+                        <div>
+                            <fieldset>
+                            <legend>Lenguaje por el que me contacta</legend>
+                            <label for="html">Javascript
+                                <input id="html" name="lenguajes" type="checkbox" value="html" checked >
+                            </label>
+                                  
+                            <label for="php">PHP
+                                <input id="php" name="lenguajes" type="checkbox" value="php" checked >
+                            </label>
+                            
+                            <label for="java">Java
+                                <input id="java" name="lenguajes" type="checkbox" value="java" >
+                            </label>
+                        </fieldset>
+                                                  
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Indique un Comentario</legend>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese un Comentario"></textarea>
+                                            
+                    </fieldset>
+    
+                    <div>
+                        <fieldset>
+                           <input id="enviar" type="submit" value="Enviar">
+                            <input id="reset" type="reset" value="Limpiar">
+                        </fieldset>
+                    </div>
+
+                </fieldset>
+
+            </form>
+        </div>
+    </main>
+</body>
+</html>

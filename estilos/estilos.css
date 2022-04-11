@@ -1,0 +1,89 @@
+*{
+    padding: 0px; 
+    margin: 0px; 
+    box-sizing: content-box;/*por defecto usa css y no tiene en cuenta, ni el borde, ni el padding , ni el margin*/
+    /*Nosotros vamos a usar border-box que incluye el borde,
+     padding y entonces la caja mide realmente lo que nosotros le indicamos*/
+     box-sizing: border-box;
+    
+}
+body{
+   
+background: linear-gradient(36deg,#f6e9d9 0%, #cab3ca 80%);
+
+}
+nav a{
+    text-decoration: none;
+    margin: 0px;
+    padding-left: 10%;
+  
+}
+
+.logo {   
+        width: 7%; 
+        padding-left: 0%;
+}
+
+.contenedor {
+   /* background-color: blueviolet;*/
+    width: 90%;
+    height: 70vh;
+    margin:0 auto;
+    margin-left:auto;
+    margin-right:auto;
+    /*para que se ajuste al contenido*/
+    /*text-align: center;*/
+    align-items: center;
+    padding-left: 1%;
+    /* Flex puede cambiar horizontal por vertical*/
+   display: flex;
+   /* flex-direction: row;*/  
+   
+}
+.columna__uno{
+    width: 30%;
+    height: 60vh;
+    /*background-color: rgb(42, 165, 108);*/
+} 
+.centrar__vert {
+    margin-top: 25vh;
+}
+.columna__dos{
+    width: 69%;
+    height: 60vh;
+    /*background-color: rgb(165, 126, 42);*/
+}
+
+.contenedor__lugar {
+    background-color: rgb(248, 233, 236);
+    /*background-color: blueviolet;*/
+     width: 90%;
+     height: 70vh;
+      /*para centrar la caja*/
+     margin:0 auto;
+     margin-left:auto;
+     margin-right:auto;
+     /*para que se ajuste al contenido*/
+     text-align: center;
+     align-items: center;
+     padding-left: 1%;
+     /* Flex puede cambiar horizontal por vertical*/
+    display: flex;
+    /* flex-direction: row;*/  
+    
+ }
+ .lugar1{
+     
+     width: 50%;
+     height: 60vh;
+     /*background-color: rgb(42, 165, 108);*/
+
+ }
+ .lugar2{
+     width: 50%;
+     height: 60vh;
+     /*background-color: rgb(165, 126, 42);*/
+ }
+.margen__iz{
+    margin: 30px;
+}
